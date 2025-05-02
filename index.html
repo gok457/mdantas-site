@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mdantas Contabilidade</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Mdantas Contabilidade em Aracaju-SE. Serviços contábeis de qualidade, atendimento personalizado.">
+    <meta name="author" content="Mdantas Contabilidade">
+    <meta name="keywords" content="Contabilidade, Escritório Contábil, Imposto de Renda, Aracaju, Mdantas">
+    <meta property="og:title" content="Mdantas Contabilidade - Aracaju SE">
+    <meta property="og:description" content="Soluções contábeis para sua empresa e seu negócio.">
+    <meta property="og:type" content="website">
+
+    <!-- Font Awesome e Estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="https://i.imgur.com/KW444qs.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="whatsapp-icon">
+            <a href="https://api.whatsapp.com/send?phone=5579998912595" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Cuidar da sua contabilidade é mais que números: é fazer parte do seu crescimento.</h1>
+            <p>Conte com um atendimento próximo, humano e disponível quando você precisar!</p>
+            <div class="banner-buttons">
+                <a href="https://api.whatsapp.com/send?phone=5579998912595" target="_blank" class="primary-button">Entre em Contato</a>
+                <a href="#quem-somos" class="secondary-button">Quem Somos</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Quem Somos -->
+    <section class="about-section" id="quem-somos">
+        <div class="about-text">
+            <h2><span class="highlight">Quem Somos</span></h2>
+            <p><strong>Há mais de 6 anos</strong> no mercado, a <strong>Mdantas Contabilidade</strong> cuida com excelência da abertura, manutenção e crescimento de empresas de <span class="highlight">todos os tamanhos</span>.</p>
+            <p>Somos especializados em <strong>autônomos, MEIs</strong> e <strong>microempresas</strong>, com foco em atendimento <span class="highlight">humanizado</span>, <span class="highlight">transparente</span> e sem burocracia.</p>
+            <p>Com uma equipe dedicada e experiência prática, tornamos a <span class="highlight">contabilidade</span> um apoio estratégico e acessível para o seu negócio crescer com tranquilidade.</p>
+            <div class="about-buttons">
+                <a href="#servicos" class="primary-button">Ver Serviços</a>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="https://i.imgur.com/ugw0vt0.jpeg" alt="Sobre Nós">
+        </div>
+    </section>
+         <!-- Atendimento Personalizado -->
+    <section class="lead-section" id="lead">
+      <h2 class="lead-title">Receba atendimento personalizado</h2>
+      <form class="lead-form" onsubmit="return enviarLead(event)">
+        <input type="text" id="nome" placeholder="Seu nome completo" required>
+        <input type="email" id="email" placeholder="Seu melhor e-mail" required>
+    
+        <select id="servico" required>
+          <option value="">Selecione um serviço de interesse</option>
+          <option>MEI</option>
+          <option>Consultoria Empresarial</option>
+          <option>Certificado Digital</option>
+          <option>Imposto de Renda</option>
+          <option>Contabilidade Mensal</option>
+          <option>RH</option>
+          <option>Livro Caixa</option>
+          <option>Escritório Virtual</option>
+        </select>
+    
+        <div class="contato-preferencia">
+          <label><input type="radio" name="preferencia" value="WhatsApp" required> Quero ser contatado por WhatsApp</label><br>
+          <label><input type="radio" name="preferencia" value="Email"> Quero ser contatado por E-mail</label>
+        </div>
+    
+        <button type="submit" class="primary-button">Enviar</button>
+      </form>
+    </section>
+    
+    <!-- Seção de Serviços (índice) -->
+    <section class="services-index" id="servicos">
+        <h2>Serviços</h2>
+        <ul class="service-links">
+            <li><a href="#servico-mei">MEI</a></li>
+            <li><a href="#servico-consultoria">Consultoria</a></li>
+            <li><a href="#servico-certificado">Certificado Digital</a></li>
+            <li><a href="#servico-ir">Imposto de Renda</a></li>
+            <li><a href="#servico-contabilidade">Contabilidade Mensal</a></li>
+            <li><a href="#servico-rh">RH</a></li>
+            <li><a href="#servico-livro">Livro Caixa</a></li>
+            <li><a href="#servico-virtual">Escritório Virtual</a></li>
+        </ul>
+    </section>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5579998912595" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+<!-- Serviço: MEI -->
+<section class="service-detalhe" id="servico-mei">
+  <div class="service-content">
+    <div class="service-text">
+      <h2><span class="highlight">Abertura e Gestão de MEI</span></h2>
+      <p><strong>Quer formalizar seu negócio e ter mais segurança?</strong> Nós te ajudamos a abrir seu MEI com rapidez, sem burocracia e o melhor: explicando tudo passo a passo.</p>
+      <p>Como <span class="highlight">Microempreendedor Individual</span> você tem acesso a <strong>benefícios do INSS</strong>, pode emitir notas fiscais e ainda pagar <strong>impostos reduzidos</strong>.</p>
+      <p><span class="highlight">Não importa se é uma ideia pequena — ela pode virar sua fonte principal de renda!</span></p>
+      <a href="https://api.whatsapp.com/send?phone=5579998912595&text=Olá! Gostaria de abrir ou regularizar meu MEI com a Mdantas Contabilidade. Como posso começar?" 
+         target="_blank" class="primary-button">Quero este serviço</a>
+    </div>
+    <div class="service-image">
+      <img src="https://i.imgur.com/qrHX69C.jpeg" alt="Abertura de MEI">
+    </div>
+  </div>
+</section>
+
+<!-- Serviço: Consultoria -->
+<section class="service-detalhe" id="servico-consultoria">
+  <div class="service-content">
+    <div class="service-text">
+      <h2><span class="highlight">Consultoria Empresarial Personalizada</span></h2>
+      <p><strong>Você sabe exatamente o que a sua empresa precisa para crescer?</strong> Com a nossa consultoria, analisamos seu negócio de forma estratégica e apontamos melhorias práticas para cada área.</p>
+      <p><span class="highlight">Consultoria não é gasto. É investimento na saúde do seu negócio.</span></p>
+      <a href="https://api.whatsapp.com/send?phone=5579998912595&text=Olá! Tenho interesse na Consultoria Empresarial da Mdantas e gostaria de saber os próximos passos." 
+         target="_blank" class="primary-button">Quero este serviço</a>
+    </div>
+    <div class="service-image">
+      <img src="https://i.imgur.com/UgMMlCV.jpeg" alt="Consultoria Empresarial">
+    </div>
+  </div>
+</section>
+
+<!-- Serviço: Certificado Digital -->
+<section class="service-detalhe" id="servico-certificado">
+  <div class="service-content">
+    <div class="service-text">
+      <h2><span class="highlight">Certificado Digital com SSD</span></h2>
+      <p><strong>Parceiros oficiais da SSD Certificadora:</strong> oferecemos um serviço 100% integrado à contabilidade, garantindo agilidade e segurança na emissão e renovação do seu certificado digital.</p>
+      <p><span class="highlight">Sem intermediários</span> e com suporte técnico, tudo feito por quem já cuida da sua empresa!</p>
+      <a href="https://api.whatsapp.com/send?phone=5579998912595&text=Olá! Tenho interesse no serviço de Certificado Digital e gostaria de saber como podemos prosseguir." 
+         target="_blank" class="primary-button">Quero este serviço</a>
+    </div>
+    <div class="service-image">
+      <img src="https://i.imgur.com/8jQ6Csn.jpeg" alt="Certificado Digital">
+    </div>
+  </div>
+</section>
+
+<!-- Serviço: Imposto de Renda -->
+<section class="service-detalhe" id="servico-ir">
+  <div class="service-content">
+    <div class="service-text">
+      <h2><span class="highlight">Declaração de Imposto de Renda</span></h2>
+      <p>Declaramos seu IR com responsabilidade, aproveitando todos os benefícios e deduções legais para garantir a maior restituição e evitar problemas com a Receita Federal.</p>
+      <p><span class="highlight">Fique tranquilo, nós cuidamos de tudo para você.</span></p>
+      <a href="https://api.whatsapp.com/send?phone=5579998912595&text=Olá! Preciso declarar meu Imposto de Renda e gostaria de contar com a Mdantas Contabilidade. Como funciona?" 
+         target="_blank" class="primary-button">Quero este serviço</a>
+    </div>
+    <div class="service-image">
+      <img src="https://i.imgur.com/6l4ruEf.jpeg" alt="Imposto de Renda">
+    </div>
+  </div>
+</section>
+
+<!-- Serviço: Contabilidade Mensal -->
+<section class="service-detalhe" id="servico-contabilidade">
+  <div class="service-content">
+    <div class="service-text">
+      <h2><span class="highlight">Contabilidade Mensal</span></h2>
+      <p>Garanta o cumprimento das obrigações fiscais, relatórios financeiros claros e suporte contábil contínuo para sua empresa.</p>
+      <p><span class="highlight">Você foca no seu negócio, nós cuidamos da contabilidade.</span></p>
+      <a href="https://api.whatsapp.com/send?phone=5579998912595&text=Olá! Tenho interesse em contratar a contabilidade mensal da Mdantas. Quais são os planos e benefícios?" 
+         target="_blank" class="primary-button">Quero este serviço</a>
+    </div>
+    <div class="service-image">
+      <img src="https://i.imgur.com/R8lA517.jpeg" alt="Contabilidade Mensal">
+    </div>
+  </div>
+</section>
+
+<!-- Serviço: RH -->
+<section class="service-detalhe" id="servico-rh">
+  <div class="service-content">
+    <div class="service-text">
+      <h2><span class="highlight">Departamento Pessoal / RH</span></h2>
+      <p>Controle de folha, admissões, férias, rescisões e obrigações trabalhistas com precisão e dentro da lei.</p>
+      <p><span class="highlight">Tudo para manter sua equipe regularizada e em conformidade.</span></p>
+      <a href="https://api.whatsapp.com/send?phone=5579998912595&text=Olá! Quero saber mais sobre os serviços de RH oferecidos pela Mdantas Contabilidade. Como posso começar?" 
+         target="_blank" class="primary-button">Quero este serviço</a>
+    </div>
+    <div class="service-image">
+      <img src="https://i.imgur.com/C7fmDJ8.jpeg" alt="Recursos Humanos">
+    </div>
+  </div>
+</section>
+
+<!-- Serviço: Livro Caixa -->
+<section class="service-detalhe" id="servico-livro">
+  <div class="service-content">
+    <div class="service-text">
+      <h2><span class="highlight">Organização de Livro Caixa</span></h2>
+      <p>Organizamos e estruturamos seu livro caixa para que você controle entradas e saídas e possa deduzir despesas com segurança.</p>
+      <p><span class="highlight">Ideal para autônomos e profissionais liberais.</span></p>
+      <a href="https://api.whatsapp.com/send?phone=5579998912595&text=Olá! Tenho interesse no serviço de organização do Livro Caixa. Como funciona o atendimento?" 
+         target="_blank" class="primary-button">Quero este serviço</a>
+    </div>
+    <div class="service-image">
+      <img src="https://i.imgur.com/OiMNZLC.jpeg" alt="Livro Caixa">
+    </div>
+  </div>
+</section>
+
+<!-- Serviço: Escritório Virtual -->
+<section class="service-detalhe" id="servico-virtual">
+  <div class="service-content">
+    <div class="service-text">
+      <h2><span class="highlight">Escritório Virtual</span></h2>
+      <p>Graças à parceria com a <strong>COMETASERV</strong>, oferecemos um endereço fiscal profissional e suporte remoto completo para seu negócio digital.</p>
+      <p><span class="highlight">Ideal para quem precisa profissionalizar a imagem sem investir em espaço físico.</span></p>
+      <a href="https://api.whatsapp.com/send?phone=5579998912595&text=Olá! Me interessei pelo serviço de Escritório Virtual com a Mdantas. Gostaria de saber como funciona." 
+         target="_blank" class="primary-button">Quero este serviço</a>
+    </div>
+    <div class="service-image">
+      <img src="https://i.imgur.com/IcAD3Gy.jpeg" alt="Escritório Virtual">
+    </div>
+  </div>
+</section>
+
+<!-- Seção Blog -->
+<section class="blog-section" id="blog">
+  <h2>Conteúdo Educativo</h2>
+  <div class="blog-posts">
+    <div class="post">
+      <a href="como-declarar-mei.html">
+        <img src="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/pagamento-de-contribuicao-mensal/imagem/pgmei.png" alt="MEI">
+        <h3>Como declarar MEI sozinho</h3>
+        <p>Dicas práticas para fazer sua declaração anual de forma correta e sem estresse.</p>
+      </a>
+    </div>
+    <div class="post">
+      <a href="erros-autonomos-impostos.html">
+        <img src="https://dnafinanceiro.com/blog/wp-content/uploads/2023/02/imposto-de-renda.png" alt="Impostos">
+        <h3>5 erros que fazem autônomos pagarem mais imposto</h3>
+        <p>Evite multas e impostos desnecessários entendendo esses erros comuns.</p>
+      </a>
+    </div>
+    <div class="post">
+      <a href="certificado-digital.html">
+        <img src="https://cdn.shopify.com/s/files/1/0597/2190/8384/files/A1-Certificado-digital_480x480.png?v=1720457073" alt="Certificado Digital">
+        <h3>O que é certificado digital e por que você precisa de um?</h3>
+        <p>Descubra como o certificado digital facilita sua rotina e garante segurança jurídica.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Rodapé -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-info">
+      <img src="https://i.imgur.com/KW444qs.png" alt="Logo Mdantas" class="footer-logo">
+      <p><strong>Mdantas Contabilidade</strong></p>
+      <p><em>"Soluções contábeis para o crescimento do seu negócio."</em></p>
+    </div>
+
+    <div class="footer-services">
+      <p><strong>Serviços:</strong></p>
+      <ul>
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#servico-mei">MEI</a></li>
+        <li><a href="#servico-consultoria">Consultoria</a></li>
+        <li><a href="#servico-certificado">Certificado Digital</a></li>
+        <li><a href="#servico-ir">Imposto de Renda</a></li>
+        <li><a href="#servico-contabilidade">Contabilidade Mensal</a></li>
+        <li><a href="#servico-rh">RH</a></li>
+        <li><a href="#servico-livro">Livro Caixa</a></li>
+        <li><a href="#servico-virtual">Escritório Virtual</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-location">
+      <p><strong>Localização:</strong></p>
+      <p>
+        <a href="https://maps.app.goo.gl/myCJVxQx17caaUrk6" target="_blank">
+          Estácio - R. Ananias Azevedo, 248<br>
+          Salgado Filho, Aracaju - SE, 49020-240
+        </a>
+      </p>
+      <p><strong>Telefone:</strong><br>
+        <a href="https://api.whatsapp.com/send?phone=5579998912595" target="_blank">(79) 99891-2595</a>
+      </p>
+      <p><strong>E-mail:</strong><br>
+        <a href="mailto:Mdantas0037@gmail.com">Mdantas0037@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Mdantas Contabilidade. Todos os direitos reservados.</p>
+  </div>
+</footer>
+<script>
+  function enviarLead(event) {
+    event.preventDefault();
+  
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const servico = document.getElementById("servico").value;
+    const preferencia = document.querySelector('input[name="preferencia"]:checked').value;
+  
+    const mensagem = `Olá, meu nome é ${nome}.\nTenho interesse no serviço de ${servico}.\nMeu e-mail é: ${email}.\nPrefiro contato por: ${preferencia}.`;
+  
+    if (preferencia === "WhatsApp") {
+      const url = `https://api.whatsapp.com/send?phone=5579998912595&text=${encodeURIComponent(mensagem)}`;
+      window.open(url, '_blank');
+    } else {
+      const assunto = `Novo Lead - Interesse em ${servico}`;
+      const corpo = encodeURIComponent(mensagem);
+      const mailto = `mailto:Mdantas0037@gmail.com?subject=${assunto}&body=${corpo}`;
+      window.location.href = mailto;
+    }
+  
+    return false;
+  }
+  </script>
+  
+</body>
+</html>
