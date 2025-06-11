@@ -8,8 +8,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #000;
+    background-color: #fff;
 }
 
 .container {
@@ -35,12 +35,12 @@ p {
 
 a {
     text-decoration: none;
-    color: #0056b3;
+    color: #000000;
     transition: all 0.3s ease;
 }
 
 a:hover {
-    color: #003d7a;
+    color: #555;
 }
 
 ul {
@@ -64,23 +64,23 @@ img {
 }
 
 .btn-primary {
-    background-color: #0056b3;
+    background-color: #000000;
     color: #fff;
 }
 
 .btn-primary:hover {
-    background-color: #003d7a;
+    background-color: #333;
     color: #fff;
 }
 
 .btn-secondary {
     background-color: transparent;
-    border: 2px solid #0056b3;
-    color: #0056b3;
+    border: 2px solid #000000;
+    color: #000000;
 }
 
 .btn-secondary:hover {
-    background-color: #0056b3;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -183,7 +183,7 @@ img {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 61, 122, 0.8)), url('../images/hero-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 61, 122, 0.8)), url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -214,7 +214,7 @@ img {
 
 /* Fast Service Section */
 .fast-service {
-    background-color: #0056b3;
+    background-color: #000000;
     color: #fff;
     padding: 40px 0;
 }
@@ -510,7 +510,7 @@ img {
 
 /* CTA Section */
 .cta {
-    background: linear-gradient(rgba(0, 86, 179, 0.9), rgba(0, 61, 122, 0.9)), url('../images/cta-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 61, 122, 0.9)), url('../images/cta-bg.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -841,4 +841,333 @@ img {
     .footer-social {
         justify-content: center;
     }
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Cor padrão do WhatsApp */
+    color: #fff;
+    font-size: 24px;
+    width: 60px;  /* Altura e largura iguais */
+    height: 60px;
+    border-radius: 50%; /* Deixa redondo */
+    display: flex;  /* Centraliza o ícone */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe57; /* Tom mais escuro no hover */
+}
+
+/* Cores principais: preto e branco */
+body {
+    background-color: #fff; /* fundo principal branco */
+    color: #000; /* texto preto */
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #555; /* cinza suave ao passar o mouse */
+}
+
+/* Botões primários pretos */
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Botões secundários preto e branco */
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.btn-secondary:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Seções em destaque (hero, fast-service, etc.) */
+.hero {
+    background: #000; /* fundo preto */
+    color: #fff;
+}
+
+.fast-service {
+    background-color: #000;
+    color: #fff;
+}
+
+.cta {
+    background: #000;
+    color: #fff;
+}
+
+/* Ícones e elementos de destaque */
+.service-icon,
+.feature-icon,
+.benefit-icon,
+.contact-icon {
+    color: #000;
+}
+
+.service-card:hover,
+.benefit-card:hover,
+.service-item:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer a,
+.footer a:hover {
+    color: #fff;
+}
+
+/* Botão flutuante WhatsApp (mantendo verde) */
+.whatsapp-float {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.service-card:hover,
+.benefit-card:hover,
+.service-item:hover {
+    background-color: #000; /* fundo preto */
+    color: #fff; /* texto branco */
+}
+
+.service-card:hover .service-icon,
+.benefit-card:hover .benefit-icon,
+.service-item:hover i {
+    color: #fff; /* ícone branco */
+}
+
+/* Ajusta todos os textos que ainda estão azuis para preto */
+.section-header h2,
+.stat-item h4,
+.service-icon,
+.feature-icon,
+.benefit-icon,
+.contact-icon {
+    color: #000 !important;
+}
+
+/* Ajuste também para links */
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Ajuste para o fundo de cards em hover e texto em hover */
+.service-card:hover,
+.benefit-card:hover,
+.service-item:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.service-card:hover .service-icon,
+.benefit-card:hover .benefit-icon,
+.service-item:hover i {
+    color: #fff;
+}
+
+/* Ajuste dos títulos (ex.: Sistema de Gestão, Aplicativo para Moradores) */
+.system-content h3,
+.app-content h3,
+.app-feature-text h4 {
+    color: #000 !important;
+}
+
+/* Ajuste para ícones em listas (check-list) e app-features */
+.system-features li i,
+.app-feature-icon {
+    color: #000 !important;
+}
+
+/* Ajuste geral de ícones azuis remanescentes */
+.service-icon,
+.feature-icon,
+.benefit-icon,
+.contact-icon {
+    color: #000 !important;
+}
+
+/* Ajuste dos links */
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #333;
+}
+
+.footer-social a.social-icon {
+    background-color: #000 !important; /* preto */
+    color: #fff !important;
+}
+
+.footer-social a.social-icon:hover {
+    background-color: #333 !important; /* preto mais suave ao passar o mouse */
+    color: #fff !important;
+}
+
+.contact .social-icon {
+    background-color: #000 !important; /* preto */
+    color: #fff !important;
+}
+
+.contact .social-icon:hover {
+    background-color: #333 !important; /* preto mais suave ao passar o mouse */
+    color: #fff !important;
+}
+
+/* Links gerais */
+a {
+    color: #000 !important;
+}
+
+a:hover {
+    color: #333 !important;
+}
+
+/* Títulos de seções e headers */
+.section-header h2,
+.about-text h3,
+.system-content h3,
+.app-content h3,
+.contact-form h3,
+.footer h3,
+.stats h4,
+.stat-item h4,
+.contact-text h3,
+.app-feature-text h4,
+.service-card h3,
+.benefit-card h3 {
+    color: #000 !important;
+}
+
+/* Linhas decorativas embaixo dos títulos */
+.section-header h2::after,
+.footer h3::after {
+    background-color: #000 !important;
+}
+
+/* Ícones que estavam azuis */
+.service-icon,
+.feature-icon,
+.benefit-icon,
+.contact-icon,
+.app-feature-icon,
+.social-icon,
+.system-features li i {
+    color: #000 !important;
+}
+
+/* Ícones e textos em hover para fundo escuro (cartões pretos) */
+.service-card:hover,
+.benefit-card:hover,
+.service-item:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.service-card:hover .service-icon,
+.benefit-card:hover .benefit-icon,
+.service-item:hover i {
+    color: #fff !important;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover {
+    background-color: #333 !important;
+}
+
+.btn-secondary {
+    border: 2px solid #000 !important;
+    color: #000 !important;
+}
+
+.btn-secondary:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* Rodapé e ícones de redes sociais */
+.footer-social .social-icon,
+.contact .social-icon {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.footer-social .social-icon:hover,
+.contact .social-icon:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+/* Ajuste para todos os elementos dentro de cartões pretos em hover */
+.service-card:hover,
+.benefit-card:hover,
+.service-item:hover {
+    background-color: #000 !important; /* fundo preto */
+    color: #fff !important; /* texto branco */
+}
+
+/* Garantir que títulos (h3) e parágrafos dentro dos cards fiquem brancos no hover */
+.service-card:hover h3,
+.service-card:hover p,
+.benefit-card:hover h3,
+.benefit-card:hover p,
+.service-item:hover h3,
+.service-item:hover p {
+    color: #fff !important;
+}
+
+/* Ícones nos cards escuros em hover */
+.service-card:hover .service-icon,
+.benefit-card:hover .benefit-icon,
+.service-item:hover i {
+    color: #fff !important;
+}
+
+/* Títulos dentro da seção de Recursos Exclusivos */
+.feature-content h3 {
+    color: #000 !important;
+}
+
+/* Força o texto do rodapé para branco */
+.footer,
+.footer p,
+.footer a,
+.footer h3 {
+    color: #fff !important;
 }
