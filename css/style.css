@@ -1171,3 +1171,22 @@ a:hover {
 .footer h3 {
     color: #fff !important;
 }
+
+.hero .btn-primary,
+.hero .btn-secondary {
+    background-color: transparent !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Hover: muda para branco com texto preto */
+.hero .btn-primary:hover,
+.hero .btn-secondary:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+}
